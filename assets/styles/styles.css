@@ -1,0 +1,332 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #3e1a63, #050622);
+}
+
+.custom-navbar {
+    background-color: #050622;
+}
+
+.logo-img {
+    height: 60px;
+}
+
+.login-reg {
+    display: flex;
+    margin-left: 30px;
+}
+
+.login-reg .nav-link {
+    cursor: pointer;
+}
+
+.nav-purple-box {
+    background-color: #3e1a63;
+    border-radius: 10px;
+    margin-left: 8px;
+    padding: 8px 25px !important;
+    color: white !important;
+    transition: background-color 0.2s ease;
+    display: inline-block;
+    text-align: center;
+    min-width: 120px;
+}
+
+
+.nav-purple-box:hover {
+    background-color: #5936a0;
+    color: white !important;
+}
+
+.hero-section {
+    padding: 250px 20px 100px;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #857dff, #87caff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-section .lead {
+    font-size: 1.5rem;
+}
+
+.hero-section .text-success {
+    margin-top: 1rem;
+}
+
+/* ====================================== */
+/* Modal di kanan*/
+/* Modal di kanan atas dengan ukuran besar */
+#loginModal .modal-dialog,
+#signupModal .modal-dialog {
+    position: fixed;
+    top: 120px;
+    right: 50px;
+    transform: none;
+    margin: 0;
+    width: 500px;
+}
+
+/* ====================================== */
+.text-center {
+    font-size: 1.5rem;
+}
+
+.game-card {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+}
+
+.game-card span {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    z-index: 2;
+}
+
+.game-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    transition: background 0.3s ease;
+    border-radius: 12px;
+}
+
+.game-card:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+}
+
+.game-card:hover::before {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Card untuk Login & Register */
+.modal-content {
+    background-color: #050622;
+    width: 500px;
+    /* Lebar card modal */
+    border-radius: 15px;
+    /* Sudut melengkung pada modal */
+    padding: 30px;
+    /* Ruang dalam modal */
+}
+
+.modal-body {
+    font-size: 1.1rem;
+    /* Ukuran font lebih besar di dalam modal */
+}
+
+.modal-header .modal-title {
+    color: white;
+    font-size: 1.5rem;
+    /* Ukuran font title */
+    font-weight: bold;
+    /* Judul modal lebih tebal */
+}
+
+/* Style untuk form input di modal */
+.modal-body input {
+    font-size: 20px;
+    padding: 12px;
+    /* Padding input form */
+    border-radius: 5px;
+    /* Sudut input lebih halus */
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Button dalam modal */
+.modal-body .btn {
+    background-color: #3e1a63;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    /* Ukuran padding tombol */
+    width: 100%;
+    /* Tombol penuh */
+}
+
+/* Modal login dan register di posisi kanan atas */
+#loginModal .modal-dialog,
+#signupModal .modal-dialog {
+    position: fixed;
+    top: 20px;
+    /* Atur jarak dari atas */
+    right: 20px;
+    /* Atur jarak dari kanan */
+    transform: none;
+    /* Hilangkan transformasi */
+    margin: 0;
+    width: 500px;
+    /* Lebar modal */
+}
+
+/* ====================================== */
+/* SERVICE */
+/* ====================================== */
+#products {
+    padding: 250px 20px 100px;
+}
+
+.service-card {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.text-center {
+    color: white;
+}
+
+.text-center p {
+    color: white;
+}
+
+
+
+
+/* ================================ */
+
+.card-custom {
+    border-radius: 12px;
+    background-color: #e9e9e9;
+}
+
+.donation-box {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.amount-btn {
+    margin: 5px 5px 5px 0;
+}
+
+.highlight {
+    color: #f38b2c;
+    font-weight: bold;
+}
+
+.currency-btn {
+    margin: 5px 5px 5px 0;
+}
+
+
+
+
+/* ========================================== */
+.card-custom-bg {
+    background-color: #050622;
+}
+
+.card-custom-bg:hover {
+    transform: translateY(-5px);
+}
+
+.btn-purple {
+    background-color: #6f42c1;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-purple:hover {
+    background-color: #8b5cf6;
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
+
+/* ========================================== */
+.checkout-card {
+    background-color: #050622;
+}
+
+
+/* HOME TRUST SECTION */
+/* ========================================== */
+.trust-section h2 {
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.trust-card {
+    background: linear-gradient(to bottom, #3e1a63, #050622);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    position: relative;
+    padding: 170px 20px 20px;
+    text-align: center;
+}
+
+.trust-card .icon {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: auto;
+}
+
+
+.trust-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ========================================== */
+/* Class khusus untuk gallery */
+.custom-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* Jarak antar gambar */
+}
+
+/* Class untuk gambar di dalam gallery */
+.custom-gallery img {
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+
+
+/* ========================================== */
+.footer {
+    background-color: #050622;
+}
+
+.footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #6f42c1;
+}

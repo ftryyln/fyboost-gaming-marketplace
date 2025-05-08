@@ -1,0 +1,13 @@
+body {
+    background: linear-gradient(to bottom, #3e1a63, #050622);
+}
+
+.btn-custom {
+    border: none;
+    background-color: #857dff;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #3e1a63;
+}

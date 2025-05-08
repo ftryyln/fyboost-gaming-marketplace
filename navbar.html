@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar py-4 fixed-top">
+    <div class="container-fluid px-5">
+        <a class="navbar-brand fs-3" href="home.html">
+            <img src="assets/images/logo.png" alt="fyBoost Logo" class="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link fs-4" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link fs-4" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link fs-4" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link fs-4" href="about-us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link fs-4" href="contact-us.html">Contact Us</a></li>
+                <div class="login-reg">
+                    <li class="nav-item"><a class="nav-link fs-4" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Log In</a></li>
+                    <li class="nav-item"><a class="nav-link fs-4 nav-purple-box" data-bs-toggle="modal"
+                            data-bs-target="#signupModal">Sign Up</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <input type="email" class="form-control mb-3" placeholder="Email">
+                    <input type="password" class="form-control mb-3" placeholder="Password">
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="signupForm">
+                    <input type="text" class="form-control mb-3" placeholder="Name" required>
+                    <input type="email" class="form-control mb-3" placeholder="Email" required>
+                    <input type="password" class="form-control mb-3" placeholder="Password" required>
+                    <button type="submit" class="btn btn-success w-100">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
