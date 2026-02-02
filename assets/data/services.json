@@ -1,0 +1,168 @@
+{
+    "valorant": [
+        {
+            "title": "Rank Boosting",
+            "image": "assets/images/valorant/rank-boosting.png",
+            "priceNow": "Rp. 36.000",
+            "features": [
+                "🟣 From Iron to Immortal III",
+                "🟣 Great KDA and winrate"
+            ]
+        },
+        {
+            "title": "Win Boosting",
+            "image": "assets/images/valorant/win-boosting.png",
+            "priceNow": "Rp. 16.000",
+            "features": [
+                "🟣 Any number of wins",
+                "🟣 Boost your win rate"
+            ]
+        },
+        {
+            "title": "Placement Matches",
+            "image": "assets/images/valorant/placement-matches.png",
+            "priceNow": "Rp. 12.000",
+            "features": [
+                "🟣 Get higher rank",
+                "🟣 Completed by pro players"
+            ]
+        },
+        {
+            "title": "Radiant Rank Boosting",
+            "image": "assets/images/valorant/radiant-boosting.png",
+            "priceNow": "Rp. 12.000.000",
+            "features": [
+                "🟣 Premium service with a stream",
+                "🟣 From Immortal III to Radiant",
+                "🟣 Be one of the 500 best players"
+            ]
+        }
+    ],
+    "odin": [
+        {
+            "title": "Daily Task",
+            "image": "assets/images/odin/daily.png",
+            "priceNow": "Rp. 50.000",
+            "features": [
+                "🟣 Complete Daily Task",
+                "🟣 Skip the grind",
+                "🟣 Get Rewards"
+            ]
+        },
+        {
+            "title": "Power Leveling",
+            "image": "assets/images/odin/leveling.png",
+            "priceNow": "Rp. 300.000",
+            "features": [
+                "🟣 Achieve desired level",
+                "🟣 Fast completion time",
+                "🟣 Progress faster"
+            ]
+        },
+        {
+            "title": "Piloting 24/7",
+            "image": "assets/images/odin/piloting.png",
+            "priceNow": "Rp. 1.000.000",
+            "features": [
+                "🟣 Skip the grind",
+                "🟣 Dont waste energy",
+                "🟣 Save your time",
+                "🟣 Just play the game, without doing any task."
+            ]
+        },
+        {
+            "title": "Diamonds",
+            "image": "assets/images/odin/diamonds.png",
+            "priceNow": "Rp. 75.000",
+            "features": [
+                "🟣 Any amount of Diamonds",
+                "🟣 Fast completion",
+                "🟣 Safe Delivery"
+            ]
+        }
+    ],
+    "night-crows": [
+        {
+            "title": "Daily Task",
+            "image": "assets/images/night-crows/daily-task.png",
+            "priceNow": "Rp. 50.000",
+            "features": [
+                "🟣 Complete Daily Task",
+                "🟣 Skip the grind",
+                "🟣 Get Rewards"
+            ]
+        },
+        {
+            "title": "Power Leveling",
+            "image": "assets/images/night-crows/power-leveling.png",
+            "priceNow": "Rp. 300.000",
+            "features": [
+                "🟣 Achieve desired level",
+                "🟣 Fast completion time",
+                "🟣 Progress faster"
+            ]
+        },
+        {
+            "title": "Hourly Farm",
+            "image": "assets/images/night-crows/farm.png",
+            "priceNow": "Rp. 20.000",
+            "features": [
+                "🟣 Skip the grind",
+                "🟣 Dont waste energy",
+                "🟣 Save your time"
+            ]
+        },
+        {
+            "title": "Diamonds",
+            "image": "assets/images/night-crows/diamonds.png",
+            "priceNow": "Rp. 65.000",
+            "features": [
+                "🟣 Any amount of Diamonds",
+                "🟣 Fast completion",
+                "🟣 Safe Delivery"
+            ]
+        }
+    ],
+    "delta-force": [
+        {
+            "title": "Rank Boost",
+            "image": "assets/images/delta-force/rank-boost-operation.png",
+            "priceNow": "Rp. 40.000",
+            "features": [
+                "🟣 Get Unique game mode title",
+                "🟣 Collect all ranked rewards",
+                "🟣 Operation mode"
+            ]
+        },
+        {
+            "title": "Rank Boost Warfare",
+            "image": "assets/images/delta-force/rank-boost-warfare.png",
+            "priceNow": "Rp. 100.000",
+            "features": [
+                "🟣 Get Unique game mode title",
+                "🟣 Collect all ranked rewards",
+                "🟣 Warfare mode"
+            ]
+        },
+        {
+            "title": "Operators Leveling",
+            "image": "assets/images/delta-force/leveling.png",
+            "priceNow": "Rp. 20.000",
+            "features": [
+                "🟣 Get all operator rewards",
+                "🟣 Choose any desired operator",
+                "🟣 Unlock complete mastery"
+            ]
+        },
+        {
+            "title": "Get The Title",
+            "image": "assets/images/delta-force/title.png",
+            "priceNow": "Rp. 25.000",
+            "features": [
+                "🟣 Show others how good you are!",
+                "🟣 All ranked rewards included",
+                "🟣 Be one of the 500 best players"
+            ]
+        }
+    ]
+}

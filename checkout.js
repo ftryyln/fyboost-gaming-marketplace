@@ -1,48 +1,67 @@
+/**
+ * Checkout Page Logic
+ * Refactored to use utility modules
+ */
+
+import { calculateFinalPrice, formatPrice } from './src/scripts/utils/price.js';
+import { getOrderData, clearOrderData } from './src/scripts/utils/storage.js';
+
+// Initialize page on load
 window.addEventListener("DOMContentLoaded", function () {
   const quantityInput = document.getElementById("quantity");
   quantityInput.addEventListener("input", updateOrderSummary);
 
-  updateOrderSummary(); // initial load
+  updateOrderSummary(); // Initial load
 });
 
-function calculateDiscount(totalPrice) {
-  return totalPrice >= 100000 ? Math.floor(totalPrice * 0.1) : 0;
-}
-
+/**
+ * Update order summary display
+ */
 function updateOrderSummary() {
-  const orderData = JSON.parse(localStorage.getItem("orderData"));
+  const orderData = getOrderData();
   const quantity = parseInt(document.getElementById("quantity").value) || 1;
 
-  if (orderData) {
-    const totalRawPrice = orderData.price * quantity;
-    const discount = calculateDiscount(totalRawPrice);
-    const finalPrice = totalRawPrice - discount;
-
-    document.getElementById("order-title").textContent = `${orderData.title} × ${quantity}`;
-    document.getElementById("order-price").textContent = `Rp ${totalRawPrice.toLocaleString()}`;
-    document.getElementById("discount-price").textContent = `Rp ${discount.toLocaleString()}`;
-    document.getElementById("total-price").textContent = `Rp ${finalPrice.toLocaleString()}`;
+  if (!orderData) {
+    console.error('No order data found');
+    return;
   }
+
+  const { totalRaw, discount, finalPrice } = calculateFinalPrice(orderData.price, quantity);
+
+  // Update UI
+  document.getElementById("order-title").textContent = `${orderData.title} × ${quantity}`;
+  document.getElementById("order-price").textContent = formatPrice(totalRaw);
+  document.getElementById("discount-price").textContent = formatPrice(discount);
+  document.getElementById("total-price").textContent = formatPrice(finalPrice);
 }
 
+// Handle form submission
 document.getElementById("checkout-form").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const name = document.getElementById("name").value;
-  const gameID = document.getElementById("gameID").value;
-  const email = document.getElementById("email").value;
-  const payment = document.getElementById("payment").value;
-  const quantity = parseInt(document.getElementById("quantity").value);
-  const orderData = JSON.parse(localStorage.getItem("orderData"));
+  const orderData = getOrderData();
 
   if (!orderData) {
     alert("Data order tidak ditemukan.");
     return;
   }
 
-  const totalRawPrice = orderData.price * quantity;
-  const discount = calculateDiscount(totalRawPrice);
-  const finalPrice = totalRawPrice - discount;
+  // Get form data
+  const formData = {
+    name: document.getElementById("name").value,
+    gameID: document.getElementById("gameID").value,
+    email: document.getElementById("email").value,
+    payment: document.getElementById("payment").value,
+    quantity: parseInt(document.getElementById("quantity").value)
+  };
 
+  // Calculate final price
+  const { finalPrice } = calculateFinalPrice(orderData.price, formData.quantity);
+
+  // In a real application, you would send this data to a server
+  console.log('Order submitted:', { ...formData, orderData, finalPrice });
+
+  // Clear order data and redirect
+  clearOrderData();
   window.location.href = 'thankyou.html';
 });
