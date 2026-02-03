@@ -3,8 +3,8 @@
  * Refactored to use utility modules
  */
 
-import { calculateFinalPrice, formatPrice } from './src/scripts/utils/price.js';
-import { getOrderData, clearOrderData } from './src/scripts/utils/storage.js';
+import { calculateFinalPrice, formatPrice } from './utils/price.js';
+import { getOrderData, clearOrderData } from './utils/storage.js';
 
 // Initialize page on load
 window.addEventListener("DOMContentLoaded", function () {

@@ -48,11 +48,11 @@ To ensure maintainability and performance, the platform utilizes a **Modular Hea
 ```text
 p0-finalproject/
 ├── assets/           # Global styles and high-definition game assets
-├── layout.js         # Core modular component loading logic
+├── scripts/          # All JavaScript logic (Modular & ES6)
+├── index.html        # Entry point (Home page)
 ├── navbar.html       # Shared navigation component
 ├── footer.html       # Shared footer component
 ├── checkout.html     # Secure transaction interface
-├── home.html         # Portal entrance and game gateway
 └── [game].html       # Specialized game service pages (Valorant, Odin, etc.)
 ```
 
@@ -67,18 +67,17 @@ The project has transitioned from a standard MVP to a **Premium Gaming Experienc
 - **✅ Immersive Layout**: Full-screen hero section and glassmorphism cards for a modern "Elite" gaming vibe.
 - **✅ Optimized Rendering**: Global IntersectionObserver for smooth "Reveal" animations on dynamic content.
 
-### New Structure
+### New Professional Structure
 ```text
-src/
-├── scripts/
-│   ├── utils/
-│   │   ├── price.js          # Price calculations & formatting
-│   │   └── storage.js        # localStorage wrapper
-│   └── services/
-│       └── game-service.js   # Universal card renderer
+scripts/
+├── utils/           # Shared utility modules (Price, Storage)
+├── services/        # Business logic & renderers (Game Service)
+├── pages/           # Page-specific initialization scripts
+├── layout.js        # Core layout & modular component loader
+└── checkout.js      # Transaction logic
 assets/
 └── data/
-    └── services.json         # Centralized game data
+    └── services.json # Centralized game data
 ```
 
 ### Benefits
@@ -98,7 +97,7 @@ assets/
 2. **Environment**
    - As the platform uses `fetch()` to load the navbar and footer, it must be run on a local server (like VS Code Live Server) to avoid CORS policy restrictions.
 3. **Execution**
-   - Simply start your local server and open `home.html`.
+   - Simply start your local server and open `index.html`.
 
 ---
 <p align="center">

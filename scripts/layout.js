@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Load navbar effects script
             const script = document.createElement('script');
-            script.src = 'assets/js/navbar-effects.js';
+            script.src = 'scripts/navbar-effects.js';
             document.body.appendChild(script);
 
             // Initialize Lucide Icons after navbar is loaded
