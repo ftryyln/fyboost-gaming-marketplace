@@ -218,18 +218,26 @@ body::before {
 }
 
 .hero-section h1 {
-    letter-spacing: -2px;
+    font-size: 3.5rem;
+    /* Reduced from default display-2 */
+    letter-spacing: -1.5px;
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.display-2 {
+    font-size: 3.5rem !important;
+    /* Global override for oversized headers */
 }
 
 .cta-btn {
     background: linear-gradient(135deg, #6f42c1 0%, #8b5cf6 100%);
     color: white !important;
-    padding: 12px 35px;
+    padding: 10px 30px;
+    /* Reduced padding */
     border-radius: 50px;
     font-weight: 600;
-    font-size: 1.1rem;
-    border: none;
+    font-size: 1rem;
+    /* Reduced font size */
     box-shadow: 0 0 20px rgba(111, 66, 193, 0.4);
     transition: all 0.3s ease;
     text-decoration: none !important;
@@ -246,10 +254,12 @@ body::before {
     border: 1.5px solid rgba(255, 255, 255, 0.2);
     /* Thicker for better anti-aliasing */
     color: white !important;
-    padding: 12px 35px;
+    padding: 10px 30px;
+    /* Reduced padding */
     border-radius: 50px;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    /* Reduced font size */
     transition: all 0.3s ease;
     text-decoration: none !important;
     display: inline-flex;
@@ -798,13 +808,15 @@ body::before {
 /* ====================================== */
 
 .page-header {
-    padding: 160px 0 40px;
+    padding: 140px 0 30px;
+    /* Reduced padding */
     text-align: center;
     position: relative;
 }
 
 .page-header h1 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
+    /* Reduced from 3.5rem */
     font-weight: 800;
     margin-bottom: 20px;
     letter-spacing: -1px;
