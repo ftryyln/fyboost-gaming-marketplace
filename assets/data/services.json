@@ -1,167 +1,167 @@
 {
     "valorant": [
         {
-            "title": "Rank Boosting",
+            "title": "RankBoosting",
             "image": "assets/images/valorant/rank-boosting.png",
-            "priceNow": "Rp. 36.000",
+            "priceNow": "Rp.36.000",
             "features": [
-                "🟣 From Iron to Immortal III",
-                "🟣 Great KDA and winrate"
+                "FromIrontoImmortalIII",
+                "GreatKDAandwinrate"
             ]
         },
         {
-            "title": "Win Boosting",
+            "title": "WinBoosting",
             "image": "assets/images/valorant/win-boosting.png",
-            "priceNow": "Rp. 16.000",
+            "priceNow": "Rp.16.000",
             "features": [
-                "🟣 Any number of wins",
-                "🟣 Boost your win rate"
+                "Anynumberofwins",
+                "Boostyourwinrate"
             ]
         },
         {
-            "title": "Placement Matches",
+            "title": "PlacementMatches",
             "image": "assets/images/valorant/placement-matches.png",
-            "priceNow": "Rp. 12.000",
+            "priceNow": "Rp.12.000",
             "features": [
-                "🟣 Get higher rank",
-                "🟣 Completed by pro players"
+                "Gethigherrank",
+                "Completedbyproplayers"
             ]
         },
         {
-            "title": "Radiant Rank Boosting",
+            "title": "RadiantRankBoosting",
             "image": "assets/images/valorant/radiant-boosting.png",
-            "priceNow": "Rp. 12.000.000",
+            "priceNow": "Rp.12.000.000",
             "features": [
-                "🟣 Premium service with a stream",
-                "🟣 From Immortal III to Radiant",
-                "🟣 Be one of the 500 best players"
+                "Premiumservicewithastream",
+                "FromImmortalIIItoRadiant",
+                "Beoneofthe500bestplayers"
             ]
         }
     ],
     "odin": [
         {
-            "title": "Daily Task",
+            "title": "DailyTask",
             "image": "assets/images/odin/daily.png",
-            "priceNow": "Rp. 50.000",
+            "priceNow": "Rp.50.000",
             "features": [
-                "🟣 Complete Daily Task",
-                "🟣 Skip the grind",
-                "🟣 Get Rewards"
+                "CompleteDailyTask",
+                "Skipthegrind",
+                "GetRewards"
             ]
         },
         {
-            "title": "Power Leveling",
+            "title": "PowerLeveling",
             "image": "assets/images/odin/leveling.png",
-            "priceNow": "Rp. 300.000",
+            "priceNow": "Rp.300.000",
             "features": [
-                "🟣 Achieve desired level",
-                "🟣 Fast completion time",
-                "🟣 Progress faster"
+                "Achievedesiredlevel",
+                "Fastcompletiontime",
+                "Progressfaster"
             ]
         },
         {
-            "title": "Piloting 24/7",
+            "title": "Piloting24/7",
             "image": "assets/images/odin/piloting.png",
-            "priceNow": "Rp. 1.000.000",
+            "priceNow": "Rp.1.000.000",
             "features": [
-                "🟣 Skip the grind",
-                "🟣 Dont waste energy",
-                "🟣 Save your time",
-                "🟣 Just play the game, without doing any task."
+                "Skipthegrind",
+                "Dontwasteenergy",
+                "Saveyourtime",
+                "Justplaythegame,withoutdoinganytask."
             ]
         },
         {
             "title": "Diamonds",
             "image": "assets/images/odin/diamonds.png",
-            "priceNow": "Rp. 75.000",
+            "priceNow": "Rp.75.000",
             "features": [
-                "🟣 Any amount of Diamonds",
-                "🟣 Fast completion",
-                "🟣 Safe Delivery"
+                "AnyamountofDiamonds",
+                "Fastcompletion",
+                "SafeDelivery"
             ]
         }
     ],
     "night-crows": [
         {
-            "title": "Daily Task",
+            "title": "DailyTask",
             "image": "assets/images/night-crows/daily-task.png",
-            "priceNow": "Rp. 50.000",
+            "priceNow": "Rp.50.000",
             "features": [
-                "🟣 Complete Daily Task",
-                "🟣 Skip the grind",
-                "🟣 Get Rewards"
+                "CompleteDailyTask",
+                "Skipthegrind",
+                "GetRewards"
             ]
         },
         {
-            "title": "Power Leveling",
+            "title": "PowerLeveling",
             "image": "assets/images/night-crows/power-leveling.png",
-            "priceNow": "Rp. 300.000",
+            "priceNow": "Rp.300.000",
             "features": [
-                "🟣 Achieve desired level",
-                "🟣 Fast completion time",
-                "🟣 Progress faster"
+                "Achievedesiredlevel",
+                "Fastcompletiontime",
+                "Progressfaster"
             ]
         },
         {
-            "title": "Hourly Farm",
+            "title": "HourlyFarm",
             "image": "assets/images/night-crows/farm.png",
-            "priceNow": "Rp. 20.000",
+            "priceNow": "Rp.20.000",
             "features": [
-                "🟣 Skip the grind",
-                "🟣 Dont waste energy",
-                "🟣 Save your time"
+                "Skipthegrind",
+                "Dontwasteenergy",
+                "Saveyourtime"
             ]
         },
         {
             "title": "Diamonds",
             "image": "assets/images/night-crows/diamonds.png",
-            "priceNow": "Rp. 65.000",
+            "priceNow": "Rp.65.000",
             "features": [
-                "🟣 Any amount of Diamonds",
-                "🟣 Fast completion",
-                "🟣 Safe Delivery"
+                "AnyamountofDiamonds",
+                "Fastcompletion",
+                "SafeDelivery"
             ]
         }
     ],
     "delta-force": [
         {
-            "title": "Rank Boost",
+            "title": "RankBoost",
             "image": "assets/images/delta-force/rank-boost-operation.png",
-            "priceNow": "Rp. 40.000",
+            "priceNow": "Rp.40.000",
             "features": [
-                "🟣 Get Unique game mode title",
-                "🟣 Collect all ranked rewards",
-                "🟣 Operation mode"
+                "GetUniquegamemodetitle",
+                "Collectallrankedrewards",
+                "Operationmode"
             ]
         },
         {
-            "title": "Rank Boost Warfare",
+            "title": "RankBoostWarfare",
             "image": "assets/images/delta-force/rank-boost-warfare.png",
-            "priceNow": "Rp. 100.000",
+            "priceNow": "Rp.100.000",
             "features": [
-                "🟣 Get Unique game mode title",
-                "🟣 Collect all ranked rewards",
-                "🟣 Warfare mode"
+                "GetUniquegamemodetitle",
+                "Collectallrankedrewards",
+                "Warfaremode"
             ]
         },
         {
-            "title": "Operators Leveling",
+            "title": "OperatorsLeveling",
             "image": "assets/images/delta-force/leveling.png",
-            "priceNow": "Rp. 20.000",
+            "priceNow": "Rp.20.000",
             "features": [
-                "🟣 Get all operator rewards",
-                "🟣 Choose any desired operator",
-                "🟣 Unlock complete mastery"
+                "Getalloperatorrewards",
+                "Chooseanydesiredoperator",
+                "Unlockcompletemastery"
             ]
         },
         {
-            "title": "Get The Title",
+            "title": "GetTheTitle",
             "image": "assets/images/delta-force/title.png",
-            "priceNow": "Rp. 25.000",
+            "priceNow": "Rp.25.000",
             "features": [
-                "🟣 Show others how good you are!",
-                "🟣 All ranked rewards included",
-                "🟣 Be one of the 500 best players"
+                "Showothershowgoodyouare!",
+                "Allrankedrewardsincluded",
+                "Beoneofthe500bestplayers"
             ]
         }
     ]

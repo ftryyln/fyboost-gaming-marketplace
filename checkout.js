@@ -11,6 +11,41 @@ window.addEventListener("DOMContentLoaded", function () {
   const quantityInput = document.getElementById("quantity");
   quantityInput.addEventListener("input", updateOrderSummary);
 
+  // Handle Payment Method Selection
+  const paymentCards = document.querySelectorAll('.payment-card');
+  const paymentInput = document.getElementById('payment');
+
+  paymentCards.forEach(card => {
+    card.addEventListener('click', function () {
+      // Remove selected class from all
+      paymentCards.forEach(c => c.classList.remove('selected'));
+      // Add to clicked
+      this.classList.add('selected');
+      // Update hidden input
+      paymentInput.value = this.getAttribute('data-payment');
+    });
+  });
+
+  // Handle Quantity Buttons
+  const qtyMinus = document.getElementById('qty-minus');
+  const qtyPlus = document.getElementById('qty-plus');
+
+  if (qtyMinus && qtyPlus) {
+    qtyMinus.addEventListener('click', () => {
+      const currentVal = parseInt(quantityInput.value) || 1;
+      if (currentVal > 1) {
+        quantityInput.value = currentVal - 1;
+        updateOrderSummary();
+      }
+    });
+
+    qtyPlus.addEventListener('click', () => {
+      const currentVal = parseInt(quantityInput.value) || 1;
+      quantityInput.value = currentVal + 1;
+      updateOrderSummary();
+    });
+  }
+
   updateOrderSummary(); // Initial load
 });
 

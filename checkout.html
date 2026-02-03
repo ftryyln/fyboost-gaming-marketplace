@@ -7,71 +7,120 @@
   <title>Checkout</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
   <div id="navbar-placeholder"></div>
 
-  <section id="first-section" class="p-5">
-    <div class="container py-5">
-      <div class="text-center">
-        <img src="assets/images/logo2.png" alt="FYBoost Logo" class="img-fluid" style="max-width: 300px">
+  <section class="page-header">
+    <div class="container reveal">
+      <h1 class="gradient-text">Complete Order</h1>
+      <div class="breadcrumb-custom">
+        <a href="home.html" class="text-decoration-none text-white-50">Home</a>
+        <span>/</span>
+        <span class="breadcrumb-item-custom active">Checkout</span>
       </div>
-      <h2 class="mb-4 text-white">Checkout</h2>
-      <div class="row gy-4">
+    </div>
+  </section>
+
+  <section class="content-section pb-5">
+    <div class="container">
+      <div class="row g-4">
         <!-- Order Summary -->
-        <div class="col-md-6">
-          <div class="card checkout-card p-4 text-white shadow">
-            <h5 class="mb-3">Your Order</h5>
-            <ul class="list-group bg-transparent">
-              <li class="list-group-item bg-transparent text-white d-flex justify-content-between">
-                <span id="order-title"></span>
-                <strong id="order-price"></strong>
-              </li>
-              <li class="list-group-item bg-transparent text-white d-flex justify-content-between">
-                <span>Discount</span>
-                <strong id="discount-price">Rp 0</strong>
-              </li>
-              <li class="list-group-item bg-transparent text-white d-flex justify-content-between">
-                <span>Total</span>
-                <strong id="total-price">Rp 0</strong>
-              </li>
-            </ul>
+        <div class="col-lg-5 reveal">
+          <div class="glass-card">
+            <h4 class="fw-bold mb-4">Order <span class="highlight">Summary</span></h4>
+            <div class="p-3 rounded-3 border border-white-10 mb-4 bg-white-5">
+              <div class="d-flex justify-content-between mb-2">
+                <span class="text-white-50" id="order-title">Product Name</span>
+                <span class="fw-bold" id="order-price">Rp 0</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="text-white-50">Discount</span>
+                <span class="text-success fw-bold" id="discount-price">Rp 0</span>
+              </div>
+              <hr class="border-white-10">
+              <div class="d-flex justify-content-between">
+                <span class="fw-bold">Total</span>
+                <span class="fw-bold fs-4 text-purple" id="total-price">Rp 0</span>
+              </div>
+            </div>
+            <div class="text-white-50 small">
+              <p><i data-lucide="shield-check" class="me-2 text-purple"></i> All transactions are secure and encrypted.
+              </p>
+              <p><i data-lucide="clock" class="me-2 text-purple"></i> Delivery usually starts within 15-30 minutes.</p>
+            </div>
           </div>
         </div>
 
         <!-- User Info Form -->
-        <div class="col-md-6">
-          <div class="card checkout-card p-4 text-white shadow">
-            <h5 class="mb-3">Your Details</h5>
-            <form id="checkout-form">
-              <div class="mb-3">
-                <label for="name" class="form-label">Full Name</label>
-                <input type="text" class="form-control bg-dark text-white border-0" id="name" required />
+        <div class="col-lg-7 reveal">
+          <div class="glass-card">
+            <h4 class="fw-bold mb-4">Your <span class="highlight">Details</span></h4>
+            <form id="checkout-form" class="premium-form">
+              <div class="row g-3">
+                <div class="col-md-12 mb-3">
+                  <label class="form-label text-white-50 small mb-2">Full Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your full name" required />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label text-white-50 small mb-2">Game Username / ID</label>
+                  <input type="text" class="form-control" id="gameID" placeholder="e.g. Player#1234" required />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label text-white-50 small mb-2">Email Address</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+                </div>
+                <div class="col-md-12 mb-3">
+                  <label class="form-label text-white-50 small mb-2">Payment Method</label>
+                  <input type="hidden" id="payment" name="payment" required>
+                  <div class="payment-method-grid">
+                    <div class="payment-card" data-payment="Bank Transfer">
+                      <div class="method-icon-wrapper">
+                        <i data-lucide="building-2"></i>
+                      </div>
+                      <span class="method-name">Bank Transfer</span>
+                      <div class="selected-badge"><i data-lucide="check"></i></div>
+                    </div>
+                    <div class="payment-card" data-payment="GoPay">
+                      <div class="method-icon-wrapper">
+                        <i data-lucide="wallet-2"></i>
+                      </div>
+                      <span class="method-name">GoPay</span>
+                      <div class="selected-badge"><i data-lucide="check"></i></div>
+                    </div>
+                    <div class="payment-card" data-payment="OVO">
+                      <div class="method-icon-wrapper">
+                        <i data-lucide="smartphone"></i>
+                      </div>
+                      <span class="method-name">OVO</span>
+                      <div class="selected-badge"><i data-lucide="check"></i></div>
+                    </div>
+                    <div class="payment-card" data-payment="DANA">
+                      <div class="method-icon-wrapper">
+                        <i data-lucide="credit-card"></i>
+                      </div>
+                      <span class="method-name">DANA</span>
+                      <div class="selected-badge"><i data-lucide="check"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label class="form-label text-white-50 small mb-2">Quantity</label>
+                  <div class="quantity-control">
+                    <button type="button" class="qty-btn" id="qty-minus">
+                      <i data-lucide="minus"></i>
+                    </button>
+                    <input type="number" class="form-control" id="quantity" value="1" min="1" required />
+                    <button type="button" class="qty-btn" id="qty-plus">
+                      <i data-lucide="plus"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="gameID" class="form-label">Game Username / ID</label>
-                <input type="text" class="form-control bg-dark text-white border-0" id="gameID" required />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email Address</label>
-                <input type="email" class="form-control bg-dark text-white border-0" id="email" required />
-              </div>
-              <div class="mb-3">
-                <label for="payment" class="form-label">Payment Method</label>
-                <select class="form-select bg-dark text-white border-0" id="payment" required>
-                  <option>Bank Transfer</option>
-                  <option>GoPay</option>
-                  <option>OVO</option>
-                  <option>DANA</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="quantity" class="form-label">Quantity</label>
-                <input type="number" class="form-control bg-dark text-white border-0" id="quantity" value="1" min="1"
-                  required />
-              </div>
-              <button type="submit" class="btn btn-purple w-100 mt-3">Confirm & Pay</button>
+              <button type="submit" class="btn-purple w-100 py-3 mt-4">Confirm & Pay Now</button>
             </form>
           </div>
         </div>

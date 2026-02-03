@@ -8,47 +8,79 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
     <div id="navbar-placeholder"></div>
-    <section id="first-section" class="trust-section py-5 text-white text-center">
-        <div class="container">
-            <h1 class="fw-bold mb-4">
-                Boosting and Piloting Services
-            </h1>
-            <p>FYBoost introduces three revolutionary valorant boosting services of this class. The first one is a Squad Boost. The second is a cheap boost. And the third is breakthrough online support, ready to help 24/7. We are happy to save your time when you reserve boost and provide great prices and excellent service.</p>
+    <section class="page-header">
+        <div class="container reveal">
+            <h1 class="gradient-text">Our Services</h1>
+            <div class="breadcrumb-custom">
+                <a href="home.html" class="text-decoration-none text-white-50">Home</a>
+                <span>/</span>
+                <span class="breadcrumb-item-custom active">Services</span>
+            </div>
+            <p class="mt-4 mx-auto text-white-50" style="max-width: 800px;">
+                FYBoost introduces three revolutionary gaming services. From elite piloting to professional squad
+                boosting, we save your time and provide excellent service at competitive prices.
+            </p>
         </div>
     </section>
-    <section class="game-section p-5">
+
+    <section id="games" class="game-section pb-5">
         <div class="container">
-            <h2 class="text-center mb-4">Pick Your Game for Boost Services</h2>
+            <h2 class="text-center mb-5 fw-bold reveal">Pick Your <span class="highlight">Game</span></h2>
             <div class="row g-4">
-                <div class="col-md-6">
+                <!-- Valorant -->
+                <div class="col-md-6 reveal">
                     <a href="valorant.html" class="text-decoration-none">
                         <div class="game-card" style="background-image: url('assets/images/valorant.jpg');">
-                            <span>Valorant</span>
+                            <div class="game-card-overlay">
+                                <h3>Valorant</h3>
+                                <div class="view-btn">
+                                    Browse Service <i data-lucide="chevron-right" class="ms-1"></i>
+                                </div>
+                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-6">
+                <!-- Delta Force -->
+                <div class="col-md-6 reveal">
                     <a href="delta-force.html" class="text-decoration-none">
                         <div class="game-card" style="background-image: url('assets/images/delta-force.png');">
-                            <span>Delta Force</span>
+                            <div class="game-card-overlay">
+                                <h3>Delta Force</h3>
+                                <div class="view-btn">
+                                    Browse Service <i data-lucide="chevron-right" class="ms-1"></i>
+                                </div>
+                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-6">
+                <!-- Night Crows -->
+                <div class="col-md-6 reveal">
                     <a href="night-crows.html" class="text-decoration-none">
                         <div class="game-card" style="background-image: url('assets/images/night-crows.png');">
-                            <span>Night Crows</span>
+                            <div class="game-card-overlay">
+                                <h3>Night Crows</h3>
+                                <div class="view-btn">
+                                    Browse Service <i data-lucide="chevron-right" class="ms-1"></i>
+                                </div>
+                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-6">
+                <!-- Odin -->
+                <div class="col-md-6 reveal">
                     <a href="odin.html" class="text-decoration-none">
                         <div class="game-card" style="background-image: url('assets/images/odin.png');">
-                            <span>Odin: Valhalla Rising</span>
+                            <div class="game-card-overlay">
+                                <h3>Odin: Valhalla Rising</h3>
+                                <div class="view-btn">
+                                    Browse Service <i data-lucide="chevron-right" class="ms-1"></i>
+                                </div>
+                            </div>
                         </div>
                     </a>
                 </div>
