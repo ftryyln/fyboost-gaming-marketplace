@@ -218,26 +218,23 @@ body::before {
 }
 
 .hero-section h1 {
-    font-size: 3.5rem;
-    /* Reduced from default display-2 */
-    letter-spacing: -1.5px;
+    font-size: 5rem;
+    /* Restored to be large and impactful */
+    letter-spacing: -2px;
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    line-height: 1.1;
 }
 
-.display-2 {
-    font-size: 3.5rem !important;
-    /* Global override for oversized headers */
-}
+/* Maintain scaling for other display-2 instances if needed, 
+   but hero is targeted specifically above */
 
 .cta-btn {
     background: linear-gradient(135deg, #6f42c1 0%, #8b5cf6 100%);
     color: white !important;
-    padding: 10px 30px;
-    /* Reduced padding */
+    padding: 12px 35px;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 1rem;
-    /* Reduced font size */
+    font-size: 1.1rem;
     box-shadow: 0 0 20px rgba(111, 66, 193, 0.4);
     transition: all 0.3s ease;
     text-decoration: none !important;
@@ -254,12 +251,10 @@ body::before {
     border: 1.5px solid rgba(255, 255, 255, 0.2);
     /* Thicker for better anti-aliasing */
     color: white !important;
-    padding: 10px 30px;
-    /* Reduced padding */
+    padding: 12px 35px;
     border-radius: 50px;
     font-weight: 500;
-    font-size: 1rem;
-    /* Reduced font size */
+    font-size: 1.1rem;
     transition: all 0.3s ease;
     text-decoration: none !important;
     display: inline-flex;
